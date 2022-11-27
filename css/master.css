@@ -1,0 +1,190 @@
+:root {
+  --main-color: #2b2c93;
+}
+
+body {
+  direction: rtl;
+  font-family: "Cairo", sans-serif;
+}
+
+/* start nav */
+.navbar {
+  background-color: transparent;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  transition: 0.5s all ease-in-out;
+  -webkit-transition: 0.2s all ease-in-out;
+  -moz-transition: 0.5s all ease-in-out;
+  -ms-transition: 0.5s all ease-in-out;
+  -o-transition: 0.5s all ease-in-out;
+}
+
+nav.active {
+  background-color: var(--main-color);
+}
+
+.navbar .navbar-brand {
+  width: 50px;
+  margin: 0 !important;
+}
+
+.navbar .navbar-brand img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 2px solid white;
+}
+
+.navbar .navbar-brand .college-name {
+  color: white;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.navbar .navbar-brand .college-name p {
+  margin: 0 15px;
+}
+
+.navbar button {
+  border: none !important;
+  outline: none !important;
+}
+
+.navbar button span {
+  color: white !important;
+  font-size: 30px;
+}
+
+.navbar .navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.navbar ul li {
+  padding: 0 10px;
+}
+
+.navbar ul li .nav-link {
+  color: white;
+  position: relative;
+  padding: 10px 0 !important;
+  width: fit-content;
+}
+
+.navbar .navbar-nav li a::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: white;
+  transition: 0.3s all ease-in-out;
+  -webkit-transition: 0.3s all ease-in-out;
+  -moz-transition: 0.3s all ease-in-out;
+  -ms-transition: 0.3s all ease-in-out;
+  -o-transition: 0.3s all ease-in-out;
+}
+
+.navbar .navbar-nav li a.active,
+.navbar .navbar-nav li a:hover,
+.navbar .navbar-nav li a:focus {
+  color: white !important;
+}
+
+.navbar .navbar-nav li a:hover::after,
+.navbar .navbar-nav li a:focus::after,
+.navbar .navbar-nav li a.active::after {
+  width: 100%;
+  color: white !important;
+}
+/* end nav */
+
+/* start landing */
+.landing {
+  position: relative;
+  top: -76px;
+}
+
+.landing .landing-start {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 3;
+}
+
+.landing .landing-start {
+  color: white;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.landing .landing-start a {
+  background-color: var(--main-color);
+  padding-right: 15px;
+  padding-left: 25px;
+  color: white;
+  font-size: 20px;
+  border: 1px solid var(--main-color);
+  transition: 0.2s all ease-in-out;
+  -webkit-transition: 0.2s all ease-in-out;
+  -moz-transition: 0.2s all ease-in-out;
+  -ms-transition: 0.2s all ease-in-out;
+  -o-transition: 0.2s all ease-in-out;
+  margin-top: 15px;
+  position: relative;
+}
+
+.landing .landing-start a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 7px solid;
+  border-color: transparent white transparent transparent;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  left: 3px;
+}
+
+.landing .landing-start a:hover,
+.landing .landing-start a:focus {
+  background-color: transparent;
+  border-color: white;
+}
+
+.landing .carousel-inner {
+  position: relative;
+}
+
+.landing .carousel-inner::before {
+  content: "";
+  width: 5000px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.landing .carousel-inner .carousel-item img {
+  height: 100vh;
+}
+
+/* end landing */
