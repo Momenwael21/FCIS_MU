@@ -1,5 +1,6 @@
 :root {
   --main-color: #2b2c93;
+  --sec-padding: 70px 0;
 }
 
 body {
@@ -131,6 +132,12 @@ nav.active {
   line-height: 1.5;
 }
 
+.landing .landing-start h1,
+.landing .landing-start h3 {
+  animation-duration: 1.5s !important;
+  animation-delay: 0.2s !important;
+}
+
 .landing .landing-start a {
   background-color: var(--main-color);
   padding-right: 15px;
@@ -186,5 +193,73 @@ nav.active {
 .landing .carousel-inner .carousel-item img {
   height: 100vh;
 }
-
 /* end landing */
+
+/* start intro */
+.intro {
+  padding: var(--sec-padding);
+}
+
+.intro .intro-video {
+  width: 100%;
+  height: auto;
+}
+
+.intro .intro-content {
+  margin-right: 10px;
+  height: 350px;
+  overflow: hidden;
+}
+
+.intro .intro-content p {
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+}
+
+.intro .intro-content a,
+.intro button {
+  background-color: var(--main-color);
+  color: white;
+  border: 1px solid var(--main-color) !important;
+}
+
+.intro button {
+  margin-top: 20px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.intro button::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  width: 0;
+  height: 0;
+}
+
+.intro .more::before {
+  top: 50%;
+  border: 5px solid !important;
+  border-color: white transparent transparent transparent !important;
+}
+
+.intro .less::before {
+  top: 35%;
+  border: 5px solid !important;
+  border-color: transparent transparent white transparent !important;
+}
+
+.intro .intro-content a:hover,
+.intro button:hover {
+  color: var(--main-color);
+  background-color: transparent;
+}
+
+.intro button.more:hover:before {
+  border-top-color: var(--main-color) !important;
+}
+
+.intro button.less:hover:before {
+  border-bottom-color: var(--main-color) !important;
+}
+/* end intro */
