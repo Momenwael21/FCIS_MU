@@ -186,5 +186,7 @@ nav.active {
 .landing .carousel-inner .carousel-item img {
   height: 100vh;
 }
-
+.landing .d-block {
+  object-fit: cover;
+}
 /* end landing */
