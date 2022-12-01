@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --main-color: #2b2c93;
   --sec-padding: 70px 0;
@@ -6,6 +12,30 @@
 body {
   direction: rtl;
   font-family: "Cairo", sans-serif;
+}
+
+.section-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-head h1 {
+  background-color: var(--main-color);
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  width: fit-content;
+}
+
+.section-head img {
+  width: 100px;
+  margin: 20px;
 }
 
 /* start nav */
@@ -263,3 +293,59 @@ nav.active {
   border-bottom-color: var(--main-color) !important;
 }
 /* end intro */
+
+/* start fac-sections */
+.fac-sections {
+  padding: var(--sec-padding);
+  background-color: #f5f5f5;
+}
+
+.fac-sections .section-head p {
+  font-weight: bold;
+  width: fit-content;
+}
+
+.fac-sections .cards {
+  margin-top: 20px;
+}
+
+.fac-sections .cards > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fac-sections .card {
+  width: 350px;
+}
+
+.fac-sections .card img {
+  margin: 15px auto;
+  width: 60%;
+}
+
+.fac-sections .card img.it-sec {
+}
+
+.fac-sections .card .card-content h5 {
+  background-color: var(--main-color);
+  padding: 10px 0;
+  font-size: 25px;
+  color: white;
+}
+
+.fac-sections .card .card-content p {
+  padding: 10px;
+}
+
+.fac-sections .card .card-content a {
+  margin: 0 36% 20px;
+  background-color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+
+.fac-sections .card .card-content a:hover {
+  background-color: transparent;
+  color: var(--main-color);
+}
+/* end fac-sections */
