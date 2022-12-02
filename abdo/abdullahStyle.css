@@ -1,0 +1,97 @@
+:root {
+    --main-color: #2b2c93;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--main-color);
+}
+.content {
+    display: grid;
+    justify-content: center;
+    place-items: center;
+}
+.some-text {
+    max-width: 600px;
+}
+.some-text iframe {
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+}
+.some-text h3 {
+    font-family: "cairo", sans-serif;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    margin: 15px;
+    direction: rtl;
+}
+.some-text p {
+    font-family: 'cairo', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    margin: 15px;
+    direction: rtl;
+}
+.some-text p > a {
+    color: #e7bb41;
+    text-decoration: none;
+}
+.some-text p > a:hover {
+    color: #fff;
+}
+.container1 {
+    font-family: "Cairo", sans-serif !important;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+}
+.container1 dl {
+    background: #e7bb41;
+    width: 250px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.container1 dd  {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.container1 dt {
+    display: none;
+}
+dt > a {
+    all: inherit;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    width: max-content;
+    margin: auto;
+}
+dt > a::before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    transition: 0.2s;
+}
+dt > a:hover::before {
+    left: 0;
+}
+lord-icon {
+    cursor: pointer;
+}
+.up {
+    display: none;
+}
