@@ -13,10 +13,12 @@ main {
   justify-content: center;
   align-items: center;
   gap: 50px;
+  margin-bottom: 50px;
 }
 
 main div {
   text-align: center;
+  align-self: center;
 }
 
 main div img {
@@ -38,12 +40,17 @@ main form > h3 {
   text-align: start;
 }
 main form > div {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  justify-items: start;
   padding: 10px;
   width: 100%;
-  align-items: flex-start;
 }
+
+main form > div:last-of-type {
+  display: flex;
+  gap: 10px;
+}
+
 main form > div > div {
   display: flex;
   gap: 30px;
@@ -77,22 +84,16 @@ main form button {
 
 main form button:hover {
   transform: scale(1.1);
-  /* border-color: #e7bb41;
-    color: #e7bb41; */
 }
-
-/* main form button:hover > [icon] {
-    color: #e7bb41;
-} */
 
 main form button [type="submit"] {
   all: initial;
 }
 
-footer {
-  margin-top: 50px;
+.footer1 {
   width: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
   justify-content: center;
   align-items: center;
   gap: 30px;
@@ -100,7 +101,7 @@ footer {
   padding-top: 10px;
 }
 
-footer a [icon] {
+.footer1 a [icon] {
   font-size: 30px;
   transition: 0.2s;
   cursor: pointer;
@@ -108,7 +109,7 @@ footer a [icon] {
 }
 
 /* for facebook icon */
-footer a:nth-child(1) [icon]:hover {
+.footer1 a:nth-child(1) [icon]:hover {
   transform: scale(1.1);
   color: #046fdf;
 }

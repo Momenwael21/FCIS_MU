@@ -118,6 +118,10 @@
                             <textarea name="msg" form="userForm" cols="50" rows="4" placeholder="اخبرنا بتجربتك..."
                                 required></textarea>
                         </div>
+                        <div>
+                            <input type="checkbox" name="notSend" id="notSend">
+                            <label for="notSend">لا ترسل لي ترشيحات عبر البريد الإلكتروني</label>
+                        </div>
                         <button>
                             <input type="submit" value="">send
                             <iconify-icon inline icon="fluent:send-20-filled"></iconify-icon>
@@ -129,26 +133,78 @@
     </main>
     <footer>
 
-        <a href="https://www.facebook.com/fcismans" target="_blank">
-            <iconify-icon icon="akar-icons:facebook-fill"></iconify-icon>
-        </a>
-        <a href="https://goo.gl/maps/HiuuXFF49XGZikdg9" target="_blank">
-            <lord-icon src="https://cdn.lordicon.com/oaflahpk.json" trigger="hover" colors="primary:#fff"
-                style="width:50px;height:50px">
-            </lord-icon>
-        </a>
-        <a href="tel:0502203275">
-            <lord-icon src="https://cdn.lordicon.com/ssvybplt.json" trigger="hover" colors="primary:#fff"
-                style="width:40px;height:40px">
-            </lord-icon>
-        </a>
-        <a href="mailto:cscidean@mans.edu.eg">
-            <lord-icon src="https://cdn.lordicon.com/ifqmqwui.json" trigger="hover" colors="primary:#fff"
-                style="width:40px;height:40px">
-            </lord-icon>
-        </a>
-    </footer>
+        
 
+    <footer class="info">
+        <div class="container">
+            <div class="row footer1">
+                <a href="https://www.facebook.com/fcismans" target="_blank">
+                    <iconify-icon icon="akar-icons:facebook-fill"></iconify-icon>
+                </a>
+                <a href="https://goo.gl/maps/HiuuXFF49XGZikdg9" target="_blank">
+                    <lord-icon src="https://cdn.lordicon.com/oaflahpk.json" trigger="hover" colors="primary:#fff"
+                        style="width:50px;height:50px">
+                    </lord-icon>
+                </a>
+                <a href="tel:0502203275">
+                    <lord-icon src="https://cdn.lordicon.com/ssvybplt.json" trigger="hover" colors="primary:#fff"
+                        style="width:40px;height:40px">
+                    </lord-icon>
+                </a>
+                <a href="mailto:cscidean@mans.edu.eg">
+                    <lord-icon src="https://cdn.lordicon.com/ifqmqwui.json" trigger="hover" colors="primary:#fff"
+                        style="width:40px;height:40px">
+                    </lord-icon>
+                </a>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="info-head m-4">
+                        <a href="./index.html" class="navbar-brand">
+                            <img src="../imgs/307345391_611870097135793_6163855582024743508_n-removebg-preview.png"
+                                alt="Logo">
+                            <div class="college-name">
+                                <p>كلية الحاسبات و المعلومات</p>
+                                <p>جامعة المنصورة</p>
+                            </div>
+                        </a>
+                        <p class="info-desc">موقع كلية الحاسبات والمعلومات هو تطبيق موجه لطلبة الثانوية العامة اللى
+                            عايزين يتعرفوا على الكلية
+                            و مجال دراستها و أولياء أمورهم و كمان الناس اللى حابة تعرف اكتر و تدخل المجال.</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="site-content m-4">
+                        <h4>روابط سريعة</h4>
+                        <a href="../index.html">الصفحة الرئيسية</a>
+                        <a href="../pages/departments.html">أقسام الكلية</a>
+                        <a href="#">المنتدى</a>
+                        <a href="#">الأنشطة الطلابية</a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="site-policies m-4">
+                        <h4>معلومات اضافية</h4>
+                        <a href="../contact/contact.html">تواصل معنا</a>
+                        <a href="./pages/privacyPolicy.html">سياسة الخصوصية</a>
+                        <a href="#">الشروط و الأحكام</a>
+                        <a href="#">مطورين التطبيق</a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="map">
+                        <h4>خريطة الوصول</h4>
+                        <div class="mapouter">
+                            <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0"
+                                    scrolling="no" marginheight="0" marginwidth="0"
+                                    src="https://maps.google.com/maps?width=600&amp;height=600&amp;hl=ar&amp;q=Faculty of Computer and Information Science Mansoura University&amp;t=k&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="../js/main.js"></script>
     <!-- for hover icons -->
     <script>
