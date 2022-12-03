@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+}
+::placeholder {
+    color: #000;
+    opacity: 0.4;
+}
+
+.navbar {
+    background: var(--main-color);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+main div img { 
+    width: 500px;
+    animation: upDown 1s linear infinite alternate;
+}
+
+@media only screen and (max-width: 600px) {
+    main div img {
+        width: 350px;
+    }
+}
+
+main form {
+    display: grid;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+main form > h3 {
+    padding: 10px;
+}
+main form > div{
+    display: grid;
+    padding: 10px;
+}
+main form > div:last-of-type {
+    display: flex;
+    gap: 10px;
+}
+main form > div > div {
+    display: flex;
+    gap: 30px;
+}
+
+main form > div > label {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+main form div label + * {
+    font-size: 16px;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+main form button {
+    all: initial;    
+    border: 1px solid #000;
+    color: #000;
+    font-size: 20px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-family: 'Cairo', sans-serif;
+    justify-self: center;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+main form button:hover {
+    transform: scale(1.1);
+    /* border-color: #e7bb41;
+    color: #e7bb41; */
+}
+
+/* main form button:hover > [icon] {
+    color: #e7bb41;
+} */
+
+main form button [type="submit"] {
+    all: initial;
+}
+
+footer {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background: var(--main-color);
+    padding-top: 10px;
+}
+
+footer a [icon] {
+    font-size: 45px;
+    transition: 0.2s;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* for facebook icon */
+footer a:nth-child(1) [icon]:hover {
+    transform: scale(1.1);
+    color: #046FDF;
+}
+
+
+
+@keyframes upDown{
+    0%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+}
