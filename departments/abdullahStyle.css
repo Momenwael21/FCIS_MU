@@ -1,0 +1,111 @@
+:root {
+    --main-color: #2b2c93;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    background: var(--main-color);
+}
+.content {
+    display: grid;
+    justify-content: center;
+    place-items: center;
+}
+.some-text,
+.content > * {
+    max-width: 600px;
+}
+iframe {
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+}
+.some-text h3 {
+    font-family: "cairo", sans-serif;
+    font-size: 22px;
+    color: #000;
+    text-align: center;
+    margin: 15px;
+    direction: rtl;
+}
+.some-text p {
+    font-family: 'cairo', sans-serif;
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+    margin: 15px;
+    direction: rtl;
+}
+.some-text p > a {
+    color: #000;
+    text-decoration: none;
+}
+.some-text p > a:hover {
+    color: var(--main-color);
+}
+
+.content {
+    text-align: center;
+}
+
+header{
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    align-items: center;
+}
+header span{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline;
+    background-color: var(--main-color);
+}
+
+.special h3{
+    margin: auto;
+    width: max-content;
+    border: 3px solid #000;
+    padding: 5px 10px;
+    margin: 50px 20px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.special h3:hover{
+    color: #fff;
+    border: 3px solid #fff;
+    margin: 50px -30px;
+}
+.special h3:hover::after{
+    left: 50%;
+    top: 0;
+    height: 100%;
+}
+.special h3:hover::before{
+    left: 0px;
+    top: 0;
+    height: 100%;
+}
+.special h3::before,
+.special h3::after{
+    content: '';
+    width: 50%;
+    height: 0;
+    position: absolute;
+    background-color: var(--main-color);
+    z-index: -1;
+    top: 50%;
+    left: -50%;
+    transition: .5s;
+    transition-delay: 0.1s;
+}
+.special h3::after{
+    left: 100%;
+}
