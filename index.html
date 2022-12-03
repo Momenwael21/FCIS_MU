@@ -36,6 +36,17 @@
         integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <script src="js/owl.carousel.min.js"></script>
+
+
     <!-- animate.css library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
@@ -80,7 +91,7 @@
                         <a class="nav-link" href="#">الأنشطة الطلابية</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./contact/contact.html">تواصل معنا</a>
+                        <a class="nav-link" href="./pages/contact.html">تواصل معنا</a>
                     </li>
                 </ul>
             </div>
@@ -244,6 +255,88 @@
     </section>
     <!-- end faculty sections -->
 
+    <!-- start student activities -->
+    <section class="student-activities">
+        <div class="conatiner">
+            <div class="section-head">
+                <div class="section-head">
+                    <h1>الأنشطة الطلابية</h1>
+                    <img src="./icons/teams.png" alt="sctions-icon">
+                    <p>تعالوا نثير الجدل شوية</p>
+                    <p>الأنشطة الطلابية و ما أدراك ما الأنشطة الطلابية يعنى تضيع الوقت يعنى الناس اللى قاعدة طول النهار
+                        ما بتعملش اى حاجة.</p>
+                    <p>
+                        -انت بتقول ايه؟ لا انت تيجى ورايا و تنسى اللى انت قولته ده!
+                    </p>
+                </div>
+            </div>
+
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="team-card">
+                        <img src="./teams_logos/mega.png" alt="mega logo">
+                        <h3>MEGA Team</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="team-card">
+                        <img src="./teams_logos/mega.png" alt="mega logo">
+                        <h3>MEGA Team</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="team-card">
+                        <img src="./teams_logos/mega.png" alt="mega logo">
+                        <h3>MEGA Team</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="team-card">
+                        <img src="./teams_logos/mega.png" alt="mega logo">
+                        <h3>MEGA Team</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="team-card">
+                        <img src="./teams_logos/mega.png" alt="mega logo">
+                        <h3>MEGA Team</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="team-card">
+                        <img src="./teams_logos/mega.png" alt="mega logo">
+                        <h3>MEGA Team</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="team-card">
+                        <img src="./teams_logos/mega.png" alt="mega logo">
+                        <h3>MEGA Team</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="team-card">
+                        <img src="./teams_logos/mega.png" alt="mega logo">
+                        <h3>MEGA Team</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="team-card">
+                        <img src="./teams_logos/mega.png" alt="mega logo">
+                        <h3>MEGA Team</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="team-card">
+                    <img src="./teams_logos/mega.png" alt="mega logo">
+                    <h3>MEGA Team</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end student activities -->
+
     <!-- start info scetion -->
     <footer class="info">
         <div class="container">
@@ -296,6 +389,28 @@
         </div>
     </footer>
     <!-- end info scetion -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script>
+
+
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
     <script src="./js/main.js"></script>
 </body>
 
