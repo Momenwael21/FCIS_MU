@@ -6,12 +6,15 @@
 
 :root {
   --main-color: #2b2c93;
-  --sec-padding: 70px 0;
+  --main-white: #ffffff99;
+  --sec-padding: 80px 0;
 }
 
 body {
   direction: rtl;
   font-family: "Cairo", sans-serif;
+  width: 101%;
+  overflow-x: hidden;
 }
 
 .section-head {
@@ -55,12 +58,12 @@ nav.active {
   background-color: var(--main-color);
 }
 
-.navbar .navbar-brand {
+.navbar-brand {
   width: 50px;
   margin: 0 !important;
 }
 
-.navbar .navbar-brand img {
+.navbar-brand img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -71,13 +74,13 @@ nav.active {
   border: 2px solid white;
 }
 
-.navbar .navbar-brand .college-name {
+.navbar-brand .college-name {
   color: white;
   font-size: 14px;
   line-height: 1.7;
 }
 
-.navbar .navbar-brand .college-name p {
+.navbar-brand .college-name p {
   margin: 0 15px;
 }
 
@@ -298,6 +301,14 @@ nav.active {
 .fac-sections {
   padding: var(--sec-padding);
   background-color: #f5f5f5;
+  overflow: hidden;
+}
+
+.fac-sections .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .fac-sections .section-head p {
@@ -316,15 +327,12 @@ nav.active {
 }
 
 .fac-sections .card {
-  width: 350px;
+  max-width: 350px;
 }
 
 .fac-sections .card img {
   margin: 15px auto;
   width: 60%;
-}
-
-.fac-sections .card img.it-sec {
 }
 
 .fac-sections .card .card-content h5 {
@@ -336,16 +344,112 @@ nav.active {
 
 .fac-sections .card .card-content p {
   padding: 10px;
+  line-height: 1.6;
+}
+
+.fac-sections .card .card-content a,
+.fac-sections .know-more {
+  background-color: var(--main-color);
+  color: white;
+  border: 1px solid var(--main-color);
+}
+
+.fac-sections .know-more {
+  margin-top: 20px;
+  font-size: 20px;
 }
 
 .fac-sections .card .card-content a {
   margin: 0 36% 20px;
-  background-color: var(--main-color);
-  border: 1px solid var(--main-color);
 }
 
-.fac-sections .card .card-content a:hover {
+.fac-sections .card .card-content a:hover,
+.fac-sections .know-more:hover {
   background-color: transparent;
   color: var(--main-color);
 }
 /* end fac-sections */
+
+/* start info section */
+.info {
+  background-color: var(--main-color);
+  padding: 30px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.info::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  width: 100%;
+  height: 100%;
+  background: url("../imgs/texture.png") center / 700px;
+  background-repeat: repeat;
+  background-repeat: repeat-x;
+  opacity: 0.2;
+}
+
+@media (max-width: 768px) {
+  .info::before {
+    bottom: -420px;
+  }
+}
+
+@media (max-width: 992px) {
+  .info::before {
+    bottom: -170px;
+  }
+}
+
+.info .container {
+  z-index: 2;
+  position: relative;
+}
+
+.info .navbar-brand {
+  display: flex;
+}
+
+.info .info-head .info-desc {
+  margin: 20px 0 0 0;
+  line-height: 1.8;
+  color: var(--main-white);
+}
+
+.info .site-content,
+.info .site-policies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info .site-content h4,
+.info .site-policies h4,
+.info .map h4 {
+  font-size: 20px;
+  color: white;
+}
+
+.info .map h4 {
+  margin: 20px 0;
+}
+
+.info .site-content a,
+.info .site-policies a {
+  text-decoration: none;
+  color: var(--main-white);
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+.info .site-content a:hover,
+.info .site-policies a:hover {
+  color: white;
+}
+
+.info .map iframe {
+  height: 220px;
+}
+/* end info section */
