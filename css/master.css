@@ -36,6 +36,10 @@ body {
   width: fit-content;
 }
 
+.section-head p {
+  font-weight: bold;
+}
+
 .section-head img {
   width: 100px;
   margin: 20px;
@@ -453,3 +457,17 @@ nav.active {
   height: 220px;
 }
 /* end info section */
+
+/* start student-activities */
+.student-activities {
+  padding: var(--sec-padding);
+}
+
+.student-activities .owl-carousel .item {
+  width: 25%;
+}
+
+.student-activities .owl-carousel img {
+  width: 25%;
+}
+/* end student-activities */
