@@ -99,6 +99,7 @@ main form button [type="submit"] {
   gap: 30px;
   background: var(--main-color);
   padding-top: 10px;
+  border-bottom: 1px solid var(--main-white);
 }
 
 .footer1 a [icon] {
