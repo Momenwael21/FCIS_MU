@@ -1,0 +1,79 @@
+
+.navbar {
+    background: var(--main-color);
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    gap: 10px;
+}
+.main section {
+    border: 1px solid #000;
+    padding: 10px;
+    margin: 20px auto;
+}
+.main > section.newest {
+    flex-grow: 1;
+}
+
+
+header{
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    align-items: center;
+}
+
+header span{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline;
+    background-color: var(--main-color);
+}
+
+.special h3{
+    margin: auto;
+    width: max-content;
+    border: 3px solid #000;
+    padding: 5px 10px;
+    margin: 50px 20px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.special h3:hover{
+    color: #fff;
+    border: 3px solid #fff;
+    margin: 50px -30px;
+}
+.special h3:hover::after{
+    left: 50%;
+    top: 0;
+    height: 100%;
+}
+.special h3:hover::before{
+    left: 0px;
+    top: 0;
+    height: 100%;
+}
+.special h3::before,
+.special h3::after{
+    content: '';
+    width: 50%;
+    height: 0;
+    position: absolute;
+    background-color: var(--main-color);
+    z-index: -1;
+    top: 50%;
+    left: -50%;
+    transition: .5s;
+    transition-delay: 0.1s;
+}
+.special h3::after{
+    left: 100%;
+}
