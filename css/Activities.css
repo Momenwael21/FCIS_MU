@@ -1,0 +1,69 @@
+/* start nav */
+nav {
+  background-color: var(--main-color) !important;
+}
+/* end nav */
+
+/* start activities */
+.activities {
+  padding: var(--sec-padding);
+}
+
+.activities .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.activities .container .head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.activities .container .head img {
+  width: 200px;
+}
+
+.activities .cards .card {
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.activities .cards .card img {
+  width: 60%;
+}
+
+.activities .cards .card .card-text {
+  margin-top: 20px;
+}
+
+.activities .cards .card a {
+  margin: 5px;
+}
+
+.activities .cards .card a svg {
+  font-size: 18px;
+}
+
+.activities .cards .card a .facebook {
+  color: #1877f2;
+}
+
+.activities .cards .card a .twitter {
+  color: #1da1f2;
+}
+
+.activities .cards .card a .instagram {
+  color: #c13584;
+}
+
+.activities .cards .card a .linkedin {
+  color: #0077b5;
+}
+
+.activities .cards .card a .youtube {
+  color: #ff0000;
+}
+/* end activities */

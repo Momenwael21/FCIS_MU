@@ -1,0 +1,47 @@
+/* start nav */
+nav {
+  background-color: var(--main-color) !important;
+}
+/* end nav */
+
+/* start faq */
+.faq {
+  padding: var(--sec-padding);
+}
+
+.faq .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq .container .head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq .container .head img {
+  width: 200px;
+}
+
+.faq .container .head p {
+  text-align: start;
+}
+
+.faq .faq-content {
+  width: 100%;
+}
+
+.faq .faq-content .accordion p {
+  line-height: 1.8;
+}
+
+.faq .faq-content .accordion .accordion-header button {
+  font-weight: bold;
+}
+
+.faq .faq-content h5 {
+  margin-top: 30px;
+}
+/* end faq */
