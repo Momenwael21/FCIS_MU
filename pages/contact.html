@@ -43,6 +43,10 @@
         integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <!-- animate.css library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
     <!-- master styleSheet -->
     <link rel="stylesheet" href="../css/master.css">
 
@@ -70,7 +74,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">الصفحة الرئيسية</a>
+                        <a class="nav-link" aria-current="page" href="../index.html">الصفحة الرئيسية</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./departments.html">أقسام الكلية</a>
@@ -85,7 +89,7 @@
                         <a class="nav-link" href="./Activities.html">الأنشطة الطلابية</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./contact.html">تواصل معنا</a>
+                        <a class="nav-link active" href="./contact.html">تواصل معنا</a>
                     </li>
                 </ul>
             </div>
@@ -99,7 +103,8 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-lg-6 ">
-                    <form id="userForm" class="justify-content-sm-center justify-content-lg-start">
+                    <form id="userForm"
+                        class="justify-content-sm-center justify-content-lg-start animate__animated animate__fadeInLeft">
                         <h3>اذا في نقطة مش واضحة بالنسبالك تقدر تملى الفورم دا و في حد هيتواصل معاك</h3>
                         <div>
                             <label for="name">الاسم الاول</label>
@@ -112,6 +117,10 @@
                         <div>
                             <label for="email">بريدك الإلكتروني</label>
                             <input type="email" name="email" placeholder="ادخل بريدك الالكتروني" required>
+                        </div>
+                        <div>
+                            <label for="phone">رقم موبايلك</label>
+                            <input type="text" name="phone" placeholder="ادخل رقم موبايلك" required>
                         </div>
                         <div>
                             <label for="msg">رسالتك</label>
