@@ -9,7 +9,10 @@
   --main-white: #ffffff99;
   --sec-padding: 80px 0;
 }
-
+::selection {
+  background: var(--main-color);
+  color: #fff;
+}
 body {
   direction: rtl;
   font-family: "Cairo", sans-serif;
