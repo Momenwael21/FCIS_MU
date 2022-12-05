@@ -29,6 +29,33 @@ nav {
   padding: 20px;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+.activities .cards .card::before,
+.activities .cards .card::after {
+  content: '';
+  position: absolute;
+  background: #eee;
+  width: 100%;
+  height: 50%;
+  z-index: -1;
+  transition: 0.2s;
+}
+.activities .cards .card::before {
+  top: 0;
+  left: -100%;
+}
+.activities .cards .card::after {
+  bottom: 0;
+  right: -100%;
+}
+.activities .cards .card:hover::before {
+  left: 0;
+}
+.activities .cards .card:hover::after {
+  right: 0;
 }
 
 .activities .cards .card img {
@@ -46,7 +73,6 @@ nav {
 .activities .cards .card a svg {
   font-size: 18px;
 }
-
 .activities .cards .card a .facebook {
   color: #1877f2;
 }
@@ -65,5 +91,12 @@ nav {
 
 .activities .cards .card a .youtube {
   color: #ff0000;
+}
+.activities .cards .card a .animation {
+  font-size: 25px;
+}
+.activities .cards .card a .animation:hover {
+  transform: scale(1.2);
+  transition: 0.2s;
 }
 /* end activities */
